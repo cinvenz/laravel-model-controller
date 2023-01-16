@@ -1,9 +1,29 @@
-<ul>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/app.css">
+</head>
+<body>
+    <div class="card">
     @foreach ($movies as $movie)
-        <li><div>{{$movie['title']}}</div></li>
-        <li><div>{{$movie['original_title']}}</div></li>
-        <li><div>{{$movie['nationality']}}</div></li>
-        <li><div>{{$movie['date']}}</div></li>
-        <li><div>{{$movie['vote']}}</div></li>
+
+        <div class="contents">
+            <p>{{$movie['title']}}</p>
+            <p>{{$movie['original_title']}}</p>
+            <p>{{$movie['nationapty']}}</p>
+            <p>{{$movie['date']}}</p>
+            <p>{{$movie['vote']}}</p>
+        </div>
+
     @endforeach
-</ul>
+</div>
+</body>
+</html>
+
+
+
