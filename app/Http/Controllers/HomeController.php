@@ -15,7 +15,7 @@ class HomeController extends Controller
     public function list()
     {
         $movies = Movie::all();
-        dd($movies);
+        // dd($movies);
         return view('guest.list', compact('movies'));
     }
 }
